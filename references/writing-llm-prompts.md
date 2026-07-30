@@ -21,5 +21,9 @@ Make each sentence follow naturally from the previous one.
 ## 📝 Markdown Spacing
 - Remove blank lines from any prompt Markdown you encounter, my editor doesn't like them.
 ***
+## 🪁 Providing Examples
+If you're updating prompt because of eval failure, don't provide the same examples to prompt that were used in the eval.
+That would beat the purpose of evals - evals' test cases should differ from examples provided in the prompt.
+***
 ## ✅ Final Check
 Read the prompt once as a busy person. Remove repetition and anything that does not help the model decide or act.

@@ -3,30 +3,19 @@ name: uberskill
 description: Apply Vojto's programming preferences across projects. Use for implementing, changing, reviewing, or refactoring code in any language, especially when deciding code structure, helper extraction, naming, change scope, and verification.
 ---
 # Uberskill
-Read `references/general-programming.md` for every programming task. Then read only the relevant references:
-- Object-oriented code: `references/object-oriented-programming.md`
-- TypeScript or React: `references/typescript-react.md`
-- iOS or Swift: `references/ios-swift.md`
-- Ruby on Rails: `references/ruby-on-rails.md`
-- LLM prompts: `references/writing-llm-prompts.md`
-## 🧱 Structure and Refactoring
-- Extract code when it is general, noisy, repeated, or distracts from the owning type's purpose. Do not extract merely to hide code.
-- Prefer cohesive types and functions with clear responsibilities over large multipurpose units.
 ***
-## 📦 Dependencies and Compatibility
-- Reuse existing project utilities before adding new dependencies.
-- Add a dependency only when its benefit clearly outweighs its maintenance cost.
-- Preserve supported platforms, language versions, public APIs, and persisted data unless the request says otherwise.
+## 📚 References
+Read `references/general-programming.md` for every programming task. Read the other references only when relevant.
+| Reference | Read for |
+| --- | --- |
+| `references/general-programming.md` | Core programming preferences for simplicity, boolean naming, and logging. |
+| `references/object-oriented-programming.md` | Object-oriented structure, method organization, and refactoring. |
+| `references/typescript-react.md` | TypeScript and React formatting, components, and project structure. |
+| `references/ios-swift.md` | iOS and Swift helpers, SwiftUI patterns, previews, and app structure. |
+| `references/ruby-on-rails.md` | Ruby on Rails testing and production secret deployment. |
+| `references/writing-llm-prompts.md` | Clear, concise LLM prompt writing and tool instructions. |
+| `references/github-actions-runners.md` | GitHub Actions workflows using self-hosted runners and adding runners to repositories. |
+| `references/mac-studio.md` | Explicit requests to access, build on, inspect, or document the Mac Studio. |
 ***
-## ✅ Verification
-- Run the narrowest relevant formatter, build, lint, and tests after editing.
-- Expand verification when the change affects shared code or broad behavior.
-- Check the final diff for accidental changes, debug code, generated noise, and exposed secrets.
-- Report what changed and what verification ran; state any verification that could not run.
-***
-## 🔍 Final Check
-- Does each changed type read like the thing it is responsible for?
-- Is setup, parsing, file, date, or network plumbing obscuring domain behavior?
-- Would a topic-based reusable helper make the main code easier to understand?
-- Is every new abstraction justified by current code?
-- Is the change focused, compatible, and verified?
+## 📧 Pull Request Notifications
+Whenever you create a pull request, use the Postmark skill at `/Users/vojto/.agents/skills/postmark/SKILL.md` to email Vojto. Write the email like a real coworker announcing that the pull request is finished and ready for review. Keep the tone natural and concise, and include the repository, pull request title, link, and a brief summary of the completed work. Send the email directly after creating the pull request without asking for confirmation.

@@ -1,4 +1,8 @@
 # TypeScript and React
+## 🦋 Prettier Formatting
+* Make sure Prettier is installed for automatic code formatting
+* Set it up such that we never use semicolons!
+***
 ## ⚛️ React Components
 - Use kebab-case for all React component filenames.
 - Each component should live in its own file, except for components that are very related to each other. (For example a List with its ListRow component.)
