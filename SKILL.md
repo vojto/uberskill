@@ -9,6 +9,7 @@ Read `references/general-programming.md` for every programming task. Read the ot
 | Reference | Read for |
 | --- | --- |
 | `references/general-programming.md` | Core programming preferences for simplicity, boolean naming, and logging. |
+| `references/firebase.md` | Firebase, Firestore, Cloud Functions, Storage, and schema changes. |
 | `references/object-oriented-programming.md` | Object-oriented structure, method organization, and refactoring. |
 | `references/typescript-react.md` | TypeScript and React formatting, components, and project structure. |
 | `references/ios-swift.md` | iOS and Swift helpers, SwiftUI patterns, previews, and app structure. |
