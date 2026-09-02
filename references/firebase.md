@@ -8,7 +8,6 @@
 ## 🧩 Feature organization
 - Keep framework and responsibility-specific files in their established top-level folders, including `src/api/`, `src/hooks/`, `src/db/`, `src/helpers/`, and `src/schemas/`.
 - Put the remaining code that belongs to one feature in `src/lib/<feature>/`. This includes feature-specific orchestration, integrations, and implementation details that are not shared infrastructure.
-- Reserve broad infrastructure folders such as `src/backends/` for implementations that participate in the standard shared backend flow. Keep special-case implementations inside their owning feature folder.
 ***
 ## 🗃️ Firestore modeling
 - Group three or more related user settings in one nested object.
