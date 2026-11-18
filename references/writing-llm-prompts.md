@@ -1,4 +1,7 @@
 # Writing LLM prompts
+## 🕰️ Read the History First
+Before changing an existing prompt, read its full git history, not just the current version: `git log -p -- <file>`, or `git log -p -L '/<NAME>/,+10:<file>'` for one prompt inside a bigger file. Each past change shows what was tried and which failure it fixed. Use that to avoid going in circles: don't undo an earlier fix or retry a wording that already failed.
+***
 ## 💬 Language
 Write prompts so a person can understand them quickly. Use short sentences and common words.
 Prefer simple wording:
